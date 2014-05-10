@@ -27,7 +27,7 @@ Configure the module using environment variables. The only required pieces of in
 
 ## Basic usage
 
-The most basic useage of the Logglyfy module is logging a plain text message to STDOUT:
+The most basic usage of the Logglyfy module is logging a plain text message to STDOUT:
 
 ```javascript
 var log = require('logglyfy');
