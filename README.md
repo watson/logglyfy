@@ -80,7 +80,7 @@ log.error(...);
 The level will be outputted to STDOUT along with the log message, e.g.
 
 ```javascript
-log.warn('this is a warning'); // [warn] this is a warning
+log.warn('this is a warning'); // Output: [warn] this is a warning
 ```
 
 The level will be added to the JSON object sent to Loggly along with a timestamp. The following code will send `{"level":"warn","timestamp":"2014-05-20T17:19:12:251Z","foo":true}` to Loggly:
