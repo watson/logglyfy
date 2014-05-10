@@ -91,6 +91,20 @@ log.warn('this is a warning', { foo: true });
 
 ## Advanced usage
 
+Access the wrapped Loggly module directly via the `log.loggly` property:
+
+```javascript
+log.loggly.search('404', function () { /* ... */ })
+              .on('rsid', function (rsid) { /* ... */ })
+```
+
+The following aliases have been made available directly on the Logglyfy module:
+
+* `log.search()` alias for `log.loggly.search()`
+* `log.logglyUrl()` alias for `log.loggly.logglyUrl()`
+* `log.customer()` alias for `log.loggly.customer()`
+* `log.tagFilter()` alias for `log.loggly.tagFilter()`
+
 Optional environment variables:
 
 * `LOG_LEVEL` - Set to `debug`, `info`, `warn`, or `error`
