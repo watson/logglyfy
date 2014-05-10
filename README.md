@@ -110,3 +110,7 @@ Optional environment variables:
 * `LOG_LEVEL` - Set to `debug`, `info`, `warn`, or `error`
 * `LOGGLY_TAGS` - a comma seperated list of [Loggly tags](https://www.loggly.com/docs/tags/) to add by default to all log-entries
 * `LOGGLY_USERNAME` and `LOGGLY_PASSWORD` - the Nodejitsu Loggly module allows you to retrieve the customer information from the Loggly API. To support this the module needs your Loggly username and password. If you don't need this feature, there is no need to supply this information
+
+## License
+
+MIT
