@@ -1,6 +1,6 @@
 # logglyfy
 
-This is an opinionated thin wrapper around the de-facto [Loggly module by Nodejitsu](https://github.com/nodejitsu/node-loggly). The purpose of this wrapper is give you an easy interface for logging JSON objects. This module was build to suit my own needs, and may not be equally useful for everybody ;)
+This is an opinionated thin wrapper around the de facto [Loggly module by Nodejitsu](https://github.com/nodejitsu/node-loggly). The purpose of this wrapper is give you an easy interface for logging JSON objects. This module was build to suit my own needs, and may not be equally useful for everybody ;)
 
 Assumptions:
 
