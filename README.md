@@ -71,7 +71,7 @@ log.info('user %d signed in (role: %s)', userId, role,
 Logglyfy supports the following log-levels: debug, info, warn, and error
 
 ```javascript
-log.debug(...);
+log.debug(...); // ignored by default, set LOG_LEVEL=debug to enable
 log.info(...);
 log.warn(...);
 log.error(...);
@@ -93,5 +93,6 @@ log.warn('this is a warning', { foo: true });
 
 Optional environment variables:
 
+* `LOG_LEVEL` - Set to `debug`, `info`, `warn`, or `error`
 * `LOGGLY_TAGS` - a comma seperated list of [Loggly tags](https://www.loggly.com/docs/tags/) to add by default to all log-entries
 * `LOGGLY_USERNAME` and `LOGGLY_PASSWORD` - the Nodejitsu Loggly module allows you to retrieve the customer information from the Loggly API. To support this the module needs your Loggly username and password. If you don't need this feature, there is no need to supply this information
