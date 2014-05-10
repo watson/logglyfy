@@ -61,7 +61,9 @@ You can of cause mix and match:
 ```javascript
 var userId = 123;
 var role = 'moderator';
-log.info('user %d signed in (role: %s)', userId, role, { action: 'signin', user_id: userId, role: role }, ['user']);
+log.info('user %d signed in (role: %s)', userId, role,
+         { action: 'signin', user_id: userId, role: role },
+         ['user']);
 ```
 
 ## Log levels
