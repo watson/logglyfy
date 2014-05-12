@@ -83,11 +83,11 @@ levels.forEach(function (level) {
 });
 exports.log = log.bind(null, 'info'); // alias
 
-// expose the regular loggly API
-exports.loggly    = loggly;
+// expose the regular loggly client
+exports.loggly    = client;
 
 // short aliases to avoid going through exports.loggly
-exports.search    = loggly.search.bind(loggly);
-exports.logglyUrl = loggly.logglyUrl.bind(loggly);
-exports.customer  = loggly.customer.bind(loggly);
-exports.tagFilter = loggly.tagFilter.bind(loggly);
+exports.search    = client.search.bind(client);
+exports.logglyUrl = client.logglyUrl.bind(client);
+exports.customer  = client.customer.bind(client);
+exports.tagFilter = client.tagFilter.bind(client);
