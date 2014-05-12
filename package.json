@@ -1,6 +1,6 @@
 {
   "name": "logglyfy",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Integrate Loggly into your app with only one line of code",
   "main": "index.js",
   "scripts": {
