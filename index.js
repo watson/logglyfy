@@ -54,20 +54,17 @@ var log = function (level, msg) { // optinal arguments: vals..., json, tags
   if (levels.indexOf(level) < level) return;
 
   var args = Array.prototype.slice.call(arguments, 2),
-      tags = args[args.length-1],
-      json = args[args.length-2];
+      placeholders = msg.split(/%[sdj]/g).length - 1,
+      tags, json;
 
-  if (Array.isArray(tags)) {
+  if (placeholders === args.length - 1) {
+    json = args[args.length-1];
     args = args.slice(0, -1);
-  } else {
-    json = tags;
-    tags = undefined;
+  } else if (placeholders <= args.length - 2) {
+    tags = args[args.length-1];
+    json = args[args.length-2];
+    args = args.slice(0, -2);
   }
-
-  if (typeof json === 'object')
-    args = args.slice(0, -1);
-  else
-    json = undefined;
 
   console.log.apply(console, ['[%s] ' + msg, level].concat(args));
 
