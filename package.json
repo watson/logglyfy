@@ -6,8 +6,12 @@
   "dependencies": {
     "loggly": "^1.0.4"
   },
+  "devDependencies": {
+    "mocha": "^1.19.0",
+    "sinon": "^1.9.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -R spec --recursive"
   },
   "repository": {
     "type": "git",
