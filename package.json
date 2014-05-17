@@ -3,6 +3,9 @@
   "version": "0.1.2",
   "description": "Integrate Loggly into your app with only one line of code",
   "main": "index.js",
+  "dependencies": {
+    "loggly": "^1.0.4"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,8 +24,5 @@
   "bugs": {
     "url": "https://github.com/watson/logglyfy/issues"
   },
-  "homepage": "https://github.com/watson/logglyfy",
-  "dependencies": {
-    "loggly": "^1.0.4"
-  }
+  "homepage": "https://github.com/watson/logglyfy"
 }
